@@ -1,0 +1,139 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(173,180,58,1) 0%, rgba(253,145,29,1) 50%, rgba(252,69,69,1) 82%);
+
+}
+
+.main{
+    background-color: aliceblue;
+    margin: 0;
+    height: 400px;
+    width: 55vw;
+    
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    
+    
+}
+.paragraph{
+   background-color: aliceblue;
+    font-size: 20px;
+    width: 66%;
+    padding-left: 30%;
+    max-height: 500px;
+    
+}
+.squere{
+    background-color: blue;
+    height: 245px;
+    width: 245px;
+    border-radius: 5%;
+    position: absolute;
+    right: 75%;
+    background: linear-gradient(90deg, rgba(180,133,58,1) 0%, rgba(253,190,29,1) 39%, rgba(252,124,69,1) 100%);
+    box-shadow: 10px 10px 10px 0px rgba(255, 105, 60, 0.514);
+    
+}
+button:hover{
+    background-color: darkorange;
+}
+
+button{
+    background-color: orange;
+    color: white;
+    height: 6vh;
+    width: 15vw;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 400;
+}
+.circle{
+    height: 15px;
+    width: 15px;
+    border-radius: 100%;
+    background-color: rgb(180, 180, 180);
+   
+}
+.oval{
+    height: 45px;
+    width: 15px;
+    background-color: #fd1d1d;
+    border-radius: 25px;
+    margin: 10px 0;
+    
+}
+.circles{
+    position: absolute;
+    right: 0;
+    margin: 1%;
+    
+    
+}
+p{
+    color: rgb(147, 143, 143);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h1{
+    font-weight: 400;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+@media only screen and (max-width: 990px){
+    
+    .main{
+        width: 90vw;
+        height: 90vh;
+        min-width: 280px;
+        display: flex;
+        justify-content: center;
+    }
+    .squere{
+        top: -12%;
+        right: 23%;
+        width: 50vw;
+        min-width: 220px;
+        
+
+    }
+    .paragraph{
+        max-width: 50vw;
+        min-width: 200;
+        max-height: 80vh;
+        text-align: center;
+        padding-top: 15%;
+        padding-right: 30%;
+        
+
+    }
+    .circles{
+        display: flex;
+        margin: 0;
+        right: initial;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        justify-content: center;
+        min-width: 80px;
+
+    }
+    .oval{
+        width: 60px;
+        height: 15px;
+        margin: 0 10px;
+    }
+    button{
+        height: 8vh;
+        width: 30vw;
+    }
+} 
